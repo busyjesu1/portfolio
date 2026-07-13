@@ -40,6 +40,23 @@ z-index:-1;
 100%{transform:translate(0,0);}
 }
 
+  .video-container{
+    position:relative;
+    width:100%;
+    padding-bottom:56.25%;
+    overflow:hidden;
+    border-radius:18px;
+    margin-bottom:20px;
+}
+
+.video-container iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:none;
+}
+  
 .container{
 width:min(1100px,92%);
 margin:auto;
@@ -214,13 +231,9 @@ transform:translateY(0);
 
 <div class="info">
 
-<div><span>Name:</span> Ripper</div>
-
 <div><span>Timezone:</span> CST</div>
 
 <div><span>Experience:</span> 2 Years</div>
-
-<div><span>Status:</span> Free Work</div>
 
 </div>
 
@@ -250,14 +263,25 @@ Some systems and commissions I've worked on.
 
 <div class="card project">
 
-<img src="images/carrying.png"
-style="width:100%;border-radius:15px;margin-bottom:20px;">
+<div class="video-container">
+    <iframe
+        src="https://streamable.com/e/y2nel4"
+        allowfullscreen
+        frameborder="0">
+    </iframe>
+</div>
 
 <h3>Carrying System</h3>
 
-<p>Carry another player with smooth animations and multiplayer support.</p>
+<p>
+Press <b>V</b> to carry another player with smooth animations and multiplayer support.
+</p>
 
-<a href="#" class="button">OPEN</a>
+<a href="https://streamable.com/y2nel4"
+   target="_blank"
+   class="button">
+View Full Video
+</a>
 
 </div>
 
